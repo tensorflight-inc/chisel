@@ -57,8 +57,7 @@ async def run_request_tensorflight(data, client):
     logger.info('Moving onto getting features')
 
     # from the back, total wait is cumulative
-    base_wait = normalvariate(mu=35, sigma=5)
-    waits = [base_wait * (0.75 ** i) for i in range(12)]
+    waits = [5, 5, 3, 2, 5]
     cumwaits = [sum(waits[i:]) for i in range(len(waits))]
 
     data['get_features'] = []

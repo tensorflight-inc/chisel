@@ -119,7 +119,7 @@ Make delays normally distributed (mean 0.015, stddev 0.04):
 
     parser.add_argument('domain', type=str)
     parser.add_argument('api_key', type=str)
-    parser.add_argument('data', type=str, help='File with data for requests (addresses, latlongs etc.)')
+    parser.add_argument('data', type=str, help='File with addresses for requests')
 
     parser.add_argument('-s', '--shuffle', action='store_true')
     parser.add_argument('-l', '--limit', type=int, required=False, default=0)
